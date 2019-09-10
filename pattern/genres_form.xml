@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<script>
+    <masterfield>gnid</masterfield>
+    <part>
+      <name>main</name>
+      <section>
+        <parentselector>.//*[@id="main"]</parentselector>
+        <selector>.//*[@id="form"]</selector>
+        <repeat>0</repeat>
+      </section>
+      <sql>
+        <readquery>SELECT * FROM genres WHERE gnid = {gnid}</readquery>
+        <writequery>
+        </writequery>
+        <writegenerator>
+          <scriptname>write</scriptname>
+          <param>
+            <table>genres</table>
+            <id_name>gnid</id_name>
+          </param>
+        </writegenerator>
+        <argument>
+          <gnid><type>int</type><long></long><default></default></gnid>
+          <gname><type>str</type><long></long><default></default></gname>
+          <descr><type>str</type><long></long><default></default></descr>
+        </argument>
+      </sql>
+      <layout>
+        <element><selector>.//*[@name="gnid"]</selector><attribute></attribute><fild>gnid</fild></element>
+        <element><selector>.//*[@name="gname"]</selector><attribute>value</attribute><fild>gname</fild></element>
+        <element><selector>.//*[@name="descr"]</selector><attribute>value</attribute><fild>descr</fild></element>
+      </layout>
+    </part>
+    <part></part>
+  </script>

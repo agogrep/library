@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+  <div id = "mainmenu">
+
+
+  <ul class="dropdown">
+        <li><p class="lang">journals</p>
+          <ul class="sub_menu">
+             <li><div    id = 'users'
+                     class = 'link dialog lang'
+                     data-typedialog = 'formJournal'
+                     data-href='/users_list/?id=0'
+                     data-preset = 0
+                     data-masterfield = 'uid'
+                     data-path = "/users_list/"
+                     data-countrows = 20
+                     >users
+             </div>
+           </li>
+           <li><div    id = 'authors'
+                   class = 'link dialog lang'
+                   data-typedialog = 'formJournal'
+                   data-href='/authors_list/?id=0'
+                   data-preset = 0
+                   data-masterfield = 'aid'
+                   data-path = "/authors_list/"
+                   data-countrows = 20
+                   >authors
+           </div>
+           <li><div    id = 'books'
+                   class = 'link dialog lang'
+                   data-typedialog = 'formJournal'
+                   data-href='/books_list/?id=0'
+                   data-preset = 0
+                   data-masterfield = 'bid'
+                   data-path = "/books_list/"
+                   data-countrows = 20
+                   >books
+           </div>
+         </li>
+         <li><div    id = 'genres'
+                 class = 'link dialog lang'
+                 data-typedialog = 'formJournal'
+                 data-href='/genres_list/?id=0'
+                 data-preset = 0
+                 data-masterfield = 'gnid'
+                 data-path = "/genres_list/"
+                 data-countrows = 20
+                 >genres
+         </div>
+       </li>
+       <li><div    id = 'acts'
+               class = 'link dialog lang'
+               data-typedialog = 'formJournal'
+               data-href='/acts_list/?id=0'
+               data-preset = 0
+               data-masterfield = 'acid'
+               data-path = "/acts_list/"
+               data-countrows = 20
+               >acts
+            </div>
+        </li>
+        <li><div    id = 'readers'
+                class = 'link dialog lang'
+                data-typedialog = 'formJournal'
+                data-href='/readers_list/?id=0'
+                data-preset = 0
+                data-masterfield = 'rid'
+                data-path = "/readers_list/"
+                data-countrows = 20
+                >readers
+             </div>
+         </li>
+         <li><div    id = 'examples'
+                 class = 'link dialog lang'
+                 data-typedialog = 'formJournal'
+                 data-href='/examples_list/?id=0'
+                 data-preset = 0
+                 data-masterfield = 'exid'
+                 data-path = "/examples_list/"
+                 data-countrows = 20
+                 >examples
+              </div>
+          </li>
+          </ul>
+        </li>
+        <li><p class = 'lang'>instruments</p>
+          <ul class="sub_menu">
+          </ul>
+        </li>
+        <li id = 'winmanager'><p class = 'lang'>window_manager</p>
+          <ul class="sub_menu">
+          </ul>
+        </li>
+        <li id = 'reqhistory'><p class = 'lang'>history</p>
+          <ul class="sub_menu">
+            <li><div class="dropdelim"></div></li>
+          </ul>
+        </li>
+        <li><p id = login_name>login_name</p>
+          <ul class="sub_menu">
+            <li><div class = 'link  lang' onclick = "exit()" >exit</div></li>
+            <li><div class="dropdelim"></div></li>
+            <li><div id = 'lnk_main_set' class = 'link  lang'>settings</div></li>
+            <li><div id = "lnk_decktop_set" class = 'link  lang'>widget_editor</div></li>
+            <li><div class = 'link lang dialog' data-typedialog = 'frame' data-href = "/page/about_system.html">about_system</div></li>
+        </ul>
+        </li>
+      </ul>
+  <div class = 'delimiter'></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<script>
+    <masterfield>bid</masterfield>
+    <part>
+      <name>main</name>
+      <section>
+        <parentselector>.//*[@id="main"]</parentselector>
+        <selector>.//*[@id="form"]</selector>
+        <repeat>0</repeat>
+      </section>
+      <sql>
+        <readquery>SELECT * FROM books WHERE bid = {bid}</readquery>
+        <writequery>
+        </writequery>
+        <writegenerator>
+          <scriptname>write</scriptname>
+          <param>
+            <table>books</table>
+            <id_name>bid</id_name>
+          </param>
+        </writegenerator>
+        <argument>
+          <bid><type>int</type><long></long><default></default></bid>
+          <bname><type>str</type><long></long><default></default></bname>
+          <edition><type>str</type><long></long><default></default></edition>
+          <sdate><type>str</type><long></long><default></default></sdate>
+          <summary><type>str</type><long></long><default></default></summary>
+          <descr><type>str</type><long></long><default></default></descr>
+        </argument>
+      </sql>
+      <layout>
+        <element><selector>.//*[@name="bid"]</selector><attribute></attribute><fild>bid</fild></element>
+        <element><selector>.//*[@name="bname"]</selector><attribute>value</attribute><fild>bname</fild></element>
+        <element><selector>.//*[@name="edition"]</selector><attribute></attribute><fild>edition</fild></element>
+        <element><selector>.//*[@name="sdate"]</selector><attribute>value</attribute><fild>sdate</fild></element>
+        <element><selector>.//*[@name="summary"]</selector><attribute></attribute><fild>summary</fild></element>
+        <element><selector>.//*[@name="descr"]</selector><attribute>value</attribute><fild>descr</fild></element>
+      </layout>
+    </part>
+    <part>
+      <name>authors</name>
+      <section>
+        <parentselector>.//*[@id="authors"]</parentselector>
+        <selector>.//*[@name="row"]</selector>
+        <repeat>0</repeat>
+      </section>
+      <sql>
+        <readquery>
+          SELECT ab.abid, a.aid, a.aname, ab.def
+                FROM authors a, aid_bid ab
+                WHERE ab.bid = {bid} AND ab.aid = a.aid
+        </readquery>
+        <writequery></writequery>
+        <writegenerator>
+          <scriptname>write</scriptname>
+          <param>
+            <table>aid_bid</table>
+            <id_name>abid</id_name>
+          </param>
+        </writegenerator>
+        <argument>
+          <abid><type>int</type><long></long><default></default></abid>
+          <aid><type>int</type><long></long><default></default></aid>
+          <aname><type>str</type><long></long><default></default></aname>
+          <def><type>str</type><long></long><default></default></def>
+        </argument>
+      </sql>
+      <layout>
+        <element><selector>.//*[@name="abid"]</selector><attribute></attribute><fild>abid</fild></element>
+        <element><selector>.//*[@name="aid"]</selector><attribute></attribute><fild>aid</fild></element>
+        <element><selector>.//*[@name="aid"]</selector><attribute>data-href</attribute><fild>aid</fild></element>
+        <element><selector>.//*[@name="aname"]</selector><attribute></attribute><fild>aname</fild></element>
+      </layout>
+
+    </part>
+
+    <part>
+      <name>genres</name>
+      <section>
+        <parentselector>.//*[@id="genres"]</parentselector>
+        <selector>.//*[@name="row"]</selector>
+        <repeat>0</repeat>
+      </section>
+      <sql>
+        <readquery>
+          SELECT gb.gbid, g.gnid, g.gname, gb.def
+                FROM genres g, gnid_bid gb
+                WHERE gb.bid = {bid} AND gb.gnid = g.gnid
+        </readquery>
+        <writequery></writequery>
+        <writegenerator>
+          <scriptname>write</scriptname>
+          <param>
+            <table>gnid_bid</table>
+            <id_name>gbid</id_name>
+          </param>
+        </writegenerator>
+        <argument>
+          <gbid><type>int</type><long></long><default></default></gbid>
+          <gnid><type>int</type><long></long><default></default></gnid>
+          <gname><type>str</type><long></long><default></default></gname>
+          <def><type>str</type><long></long><default></default></def>
+        </argument>
+      </sql>
+      <layout>
+        <element><selector>.//*[@name="gbid"]</selector><attribute></attribute><fild>gbid</fild></element>
+        <element><selector>.//*[@name="gnid"]</selector><attribute></attribute><fild>gnid</fild></element>
+        <element><selector>.//*[@name="gnid"]</selector><attribute>data-href</attribute><fild>gnid</fild></element>
+        <element><selector>.//*[@name="gname"]</selector><attribute></attribute><fild>gname</fild></element>
+      </layout>
+    </part>
+  </script>

@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="target form" id ='main'>
+      <div class="main formsection" id='form' >
+        <div id='sysmessage'></div>
+
+        <div class ="formtabs">
+          <ul>
+            <li><a class = "lang"   href="#basic">basic</a></li>
+            <li><a class = "lang"  href="#examples">examples</a></li>
+          </ul>
+          <div id="basic">
+            <div name="bid" class="main master autolabel infofield">{bid}</div>
+            <div class="delimiter"></div>
+
+            <div class = 'selectionbox' style="max-width: 394px;">
+              <div class = 'dialog button-select'
+                      data-typedialog = 'selectItems'
+                      data-choicemode = 'multi'
+                      data-masterfield = 'aid'
+                      data-path = '/authors_list/'
+                      data-countrows =  12
+                      data-relationship = '#authors'>
+               <svg><use xlink:href="/file/ico/sprite.svg#three-point"></use></svg>
+               </div>
+             <div class = 'selectionbox-label lang flup'>authors</div>
+             <div id = 'authors' class='form'>
+                <div class='authors row formsection' name = 'row'>
+                   <div class = 'authors hidfeild' name="abid">{abid}</div>
+                   <div class = 'authors dialog ' data-typedialog = 'form' data-href='/authors_form/?aid={aid}' name="aid">{aid}</div>
+                   <div  data-asname = '' name="aname">{aname}</div>
+                </div>
+            </div>
+           </div>
+
+            <input name="bname" class="main  autolabel" value="">
+            <textarea name="edition" class="main autolabel">{edition}</textarea>
+
+            <div class = 'selectionbox' style="max-width: 394px;">
+              <div class = 'dialog button-select'
+                      data-typedialog = 'selectItems'
+                      data-choicemode = 'multi'
+                      data-masterfield = 'gnid'
+                      data-path = '/genres_list/'
+                      data-countrows =  12
+                      data-relationship = '#genres'>
+               <svg><use xlink:href="/file/ico/sprite.svg#three-point"></use></svg>
+               </div>
+             <div class = 'selectionbox-label lang flup'>genres</div>
+             <div id = 'genres' class='form'>
+                <div class='genres row formsection' name = 'row'>
+                   <div class = 'genres hidfeild' name="gbid">{gbid}</div>
+                   <div class = 'genres dialog ' data-typedialog = 'form' data-href='/genres_form/?gnid={gnid}' name="gnid">{gnid}</div>
+                   <div class = 'genres' data-asname = '' name="gname">{gname}</div>
+                </div>
+            </div>
+           </div>
+
+            <input name="sdate" class = 'main datetimebox  autolabel' type="text" value="">
+            <textarea name="summary" class="main autolabel">{summary}</textarea>
+            <input name="descr" class="main  autolabel" value="">
+          </div>
+          <div id="examples">
+            <div class = 'journal ' style="max-width: 500px;"
+                  data-use-control-panel = 1
+                  data-masterfield = 'exid'
+                  data-path = "/examples_list/"
+                  data-countrows =  12
+                  >
+            </div>
+          </div>
+        </div>
+        <div class="delimiter"></div>
+
+
+       </div>
+     </div>
+   </body>
+</html>

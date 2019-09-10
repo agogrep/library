@@ -1,0 +1,13 @@
+{
+          "users_list.journal": {"password": {}},
+          "users_form.main": {
+                              "password": {
+                                      "root":"rw"
+                                        },
+
+                              "login": {
+                                        "root":"rw",
+                                        "all":"r"
+                                        }
+                              },
+}

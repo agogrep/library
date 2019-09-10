@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="target form" id ='main'>
+      <div class="main formsection" id='form' >
+        <div id='sysmessage'></div>
+        <div name="exid" class="main master autolabel infofield">{exid}</div>
+        <input name="code" class="main  autolabel" value="">
+        <div class="delimiter"></div>
+        <div class = 'selectionbox' style="max-width: 394px;">
+          <div class = 'dialog button-select'
+                  data-typedialog = 'selectItems'
+                  data-choicemode = 'one'
+                  data-masterfield = 'bid'
+                  data-path = '/books_list/'
+                  data-countrows =  12
+                  data-relationship = '#books'>
+           <svg><use xlink:href="/file/ico/sprite.svg#three-point"></use></svg>
+           </div>
+         <div class = 'selectionbox-label flup'>book</div>
+         <div id = 'books' class='selectionvalue'>
+            <div class=' row formsection' name = 'row'>
+               <div class = 'main dialog ' data-typedialog = 'form' data-href='/books_form/?bid={bid}' name="bid">{bid}</div>
+               <div  data-asname = '' name="bname">{bname}</div>
+            </div>
+        </div>
+       </div>
+
+        <input name="descr" class="main  autolabel" value="">
+
+
+
+
+       </div>
+     </div>
+   </body>
+</html>
