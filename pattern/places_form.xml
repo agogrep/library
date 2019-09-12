@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<script>
+    <masterfield>pid</masterfield>
+    <part>
+      <name>main</name>
+      <section>
+        <parentselector>.//*[@id="main"]</parentselector>
+        <selector>.//*[@id="form"]</selector>
+        <repeat>0</repeat>
+      </section>
+      <sql>
+        <readquery>SELECT * FROM places WHERE pid = {pid}</readquery>
+        <writequery>
+        </writequery>
+        <writegenerator>
+          <scriptname>write</scriptname>
+          <param>
+            <table>places</table>
+            <id_name>pid</id_name>
+          </param>
+        </writegenerator>
+        <argument>
+          <pid><type>int</type><long></long><default></default></pid>
+          <pname><type>str</type><long></long><default></default></pname>
+          <descr><type>str</type><long></long><default></default></descr>
+        </argument>
+      </sql>
+      <layout>
+        <element><selector>.//*[@name="pid"]</selector><attribute></attribute><fild>pid</fild></element>
+        <element><selector>.//*[@name="pname"]</selector><attribute>value</attribute><fild>pname</fild></element>
+        <element><selector>.//*[@name="descr"]</selector><attribute>value</attribute><fild>descr</fild></element>
+      </layout>
+    </part>
+    <part></part>
+  </script>

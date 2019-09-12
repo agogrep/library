@@ -1,0 +1,20 @@
+.row .icon{
+    font-size: 0;
+}
+
+.row .icon::before{
+  font-size: 16px;
+  font-family: 'main-ico' !important;
+  color: var(--e1_col);
+}
+
+
+
+
+.row div[data-ex_available="1"]::before{
+    content: "\e903";
+}
+
+.row div[data-ex_available="0"]::before{
+    content: "\e901";
+}

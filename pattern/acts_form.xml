@@ -9,7 +9,14 @@
         <repeat>0</repeat>
       </section>
       <sql>
-        <readquery>SELECT * FROM acts WHERE acid = {acid}</readquery>
+        <readquery>SELECT a.acid, IFNULL(a.exid,'') exid,
+                    IFNULL(a.rid,'') rid,
+                   a.state, a.startdate, a.enddate, a.descr, a.is_deleted,
+                   IFNULL(e.code,'') code,
+                   IFNULL(r.rname,'') rname FROM acts a
+                    LEFT OUTER JOIN examples e ON a.exid  = e.exid
+                    LEFT OUTER JOIN readers r ON a.rid = r.rid
+                    WHERE acid = {acid}</readquery>
         <writequery>
         </writequery>
         <writegenerator>
@@ -27,12 +34,18 @@
           <startdate><type>str</type><long></long><default></default></startdate>
           <enddate><type>str</type><long></long><default></default></enddate>
           <descr><type>str</type><long></long><default></default></descr>
+          <code><type>str</type><long></long><default></default></code>
+          <rname><type>str</type><long></long><default></default></rname>
         </argument>
       </sql>
       <layout>
         <element><selector>.//*[@name="acid"]</selector><attribute></attribute><fild>acid</fild></element>
         <element><selector>.//*[@name="exid"]</selector><attribute></attribute><fild>exid</fild></element>
+        <element><selector>.//*[@name="exid"]</selector><attribute>data-href</attribute><fild>exid</fild></element>
+        <element><selector>.//*[@name="code"]</selector><attribute></attribute><fild>code</fild></element>
         <element><selector>.//*[@name="rid"]</selector><attribute></attribute><fild>rid</fild></element>
+        <element><selector>.//*[@name="rid"]</selector><attribute>data-href</attribute><fild>rid</fild></element>
+        <element><selector>.//*[@name="rname"]</selector><attribute></attribute><fild>rname</fild></element>
         <element><selector>.//*[@name="state"]</selector><attribute>value</attribute><fild>state</fild></element>
         <element><selector>.//*[@name="startdate"]</selector><attribute>value</attribute><fild>startdate</fild></element>
         <element><selector>.//*[@name="enddate"]</selector><attribute>value</attribute><fild>enddate</fild></element>

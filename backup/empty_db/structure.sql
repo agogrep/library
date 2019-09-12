@@ -105,6 +105,7 @@ CREATE TABLE `books` (
   `summary` text,
   `descr` varchar(255) DEFAULT '',
   `is_deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `pid` smallint(5) DEFAULT NULL,
   PRIMARY KEY (`bid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -250,6 +251,22 @@ CREATE TABLE `passport_db` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `places`
+--
+
+DROP TABLE IF EXISTS `places`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `places` (
+  `pid` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `pname` varchar(20) NOT NULL DEFAULT '',
+  `descr` varchar(255) DEFAULT '',
+  `is_deleted` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `presets`
 --
 
@@ -379,4 +396,4 @@ CREATE TABLE `users` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-09-10  0:00:02
+-- Dump completed on 2019-09-12  0:00:02

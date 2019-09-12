@@ -9,7 +9,11 @@
         <repeat>0</repeat>
       </section>
       <sql>
-        <readquery>SELECT * FROM books WHERE bid = {bid}</readquery>
+        <readquery>SELECT  b.bid, b.bname, b.edition, b.sdate,
+                  b.summary, b.descr, b.is_deleted,
+                  IFNULL(b.pid,'') pid, IFNULL(p.pname,'') pname FROM books b
+                  LEFT OUTER JOIN places p USING(pid)
+                  WHERE bid = {bid}</readquery>
         <writequery>
         </writequery>
         <writegenerator>
@@ -21,6 +25,8 @@
         </writegenerator>
         <argument>
           <bid><type>int</type><long></long><default></default></bid>
+          <pid><type>int</type><long></long><default></default></pid>
+          <pname><type>str</type><long></long><default></default></pname>
           <bname><type>str</type><long></long><default></default></bname>
           <edition><type>str</type><long></long><default></default></edition>
           <sdate><type>str</type><long></long><default></default></sdate>
@@ -30,6 +36,9 @@
       </sql>
       <layout>
         <element><selector>.//*[@name="bid"]</selector><attribute></attribute><fild>bid</fild></element>
+        <element><selector>.//*[@name="pid"]</selector><attribute></attribute><fild>pid</fild></element>
+        <element><selector>.//*[@name="pid"]</selector><attribute>data-href</attribute><fild>pid</fild></element>
+        <element><selector>.//*[@name="pname"]</selector><attribute></attribute><fild>pname</fild></element>
         <element><selector>.//*[@name="bname"]</selector><attribute>value</attribute><fild>bname</fild></element>
         <element><selector>.//*[@name="edition"]</selector><attribute></attribute><fild>edition</fild></element>
         <element><selector>.//*[@name="sdate"]</selector><attribute>value</attribute><fild>sdate</fild></element>

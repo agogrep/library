@@ -14,8 +14,15 @@
             data-href='/examples_form/?exid={exid}'
             name="exid">{exid}</div>
        <div name="code" >{code}</div>
-       <div name="bid">{bid}</div>
-       <div name="descr">{descr}</div>
+       <div name="available" class = 'icon' data-ex_available = ''>{available}</div>
+       <div class = 'dialog link ripple'
+            data-typedialog = 'form'
+            data-href='/books_form/?bid={bid}'
+            name="bid">{bid}</div>
+        <div name="author">{author}</div>
+        <div name="bname">{bname}</div>
+        <div name="genre">{genre}</div>
+        <div name="descr">{descr}</div>
      </div>
   </div>
 </body>

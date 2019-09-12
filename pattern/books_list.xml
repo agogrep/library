@@ -10,7 +10,7 @@
         <readquery></readquery>
         <writequery></writequery>
         <readgenerator>
-          <scriptname>journal</scriptname>
+          <scriptname>journal_books</scriptname>
           <param>
             <table>books</table>
             <id_name>bid</id_name>
@@ -19,15 +19,25 @@
         </readgenerator>
         <argument>
           <bid><type>int</type><long></long><default></default></bid>
-          <bname><type>int</type><long></long><default></default></bname>
-          <sdate><type>int</type><long></long><default></default></sdate>
+          <author><type>str</type><long></long><default></default></author>
+          <bname><type>str</type><long></long><default></default></bname>
+          <sdate><type>str</type><long></long><default></default></sdate>
+          <genre><type>str</type><long></long><default></default></genre>
+          <descr><type>str</type><long></long><default></default></descr>
+          <examples><type>int</type><long></long><default></default></examples>
+          <available><type>int</type><long></long><default></default></available>
         </argument>
       </sql>
       <layout>
           <element><selector>.//*[@name="bid"]</selector><attribute></attribute><fild>bid</fild></element>
           <element><selector>.//*[@name="bid"]</selector><attribute>data-href</attribute><fild>bid</fild></element>
+          <element><selector>.//*[@name="author"]</selector><attribute></attribute><fild>author</fild></element>
           <element><selector>.//*[@name="bname"]</selector><attribute></attribute><fild>bname</fild></element>
           <element><selector>.//*[@name="sdate"]</selector><attribute></attribute><fild>sdate</fild></element>
+          <element><selector>.//*[@name="genre"]</selector><attribute></attribute><fild>genre</fild></element>
+          <element><selector>.//*[@name="descr"]</selector><attribute></attribute><fild>descr</fild></element>
+          <element><selector>.//*[@name="examples"]</selector><attribute></attribute><fild>examples</fild></element>
+          <element><selector>.//*[@name="available"]</selector><attribute></attribute><fild>available</fild></element>
       </layout>
     </part>
     <part></part>

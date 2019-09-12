@@ -61,6 +61,28 @@
 
             <input name="sdate" class = 'main datetimebox  autolabel' type="text" value="">
             <textarea name="summary" class="main autolabel">{summary}</textarea>
+
+            <div class = 'selectionbox' style="max-width: 394px;">
+              <div class = 'dialog button-select'
+                      data-typedialog = 'selectItems'
+                      data-choicemode = 'one'
+                      data-masterfield = 'pid'
+                      data-path = '/places_list/'
+                      data-countrows =  12
+                      data-relationship = '#places'>
+               <svg><use xlink:href="/file/ico/sprite.svg#three-point"></use></svg>
+               </div>
+             <div class = 'selectionbox-label flup'>place</div>
+             <div id = 'places' class='selectionvalue'>
+                <div class=' row formsection' name = 'row'>
+                   <div class = 'main dialog ' data-typedialog = 'form' data-href='/places_form/?pid={pid}' name="pid">{pid}</div>
+                   <div  data-asname = '' name="pname">{pname}</div>
+                </div>
+            </div>
+           </div>
+
+
+
             <input name="descr" class="main  autolabel" value="">
           </div>
           <div id="examples">

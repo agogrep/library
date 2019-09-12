@@ -9,7 +9,13 @@
         <repeat>0</repeat>
       </section>
       <sql>
-        <readquery>SELECT * FROM examples WHERE exid = {exid}</readquery>
+        <readquery>SELECT e.exid, e.code,
+          e.descr, e.is_deleted,
+          IFNULL(e.bid, '')  bid,
+          IFNULL(b.bname, '')  bname
+          FROM examples e
+          LEFT OUTER JOIN books b ON b.bid = e.bid
+           WHERE exid = {exid}</readquery>
         <writequery>
         </writequery>
         <writegenerator>
@@ -24,6 +30,7 @@
           <code><type>int</type><long></long><default></default></code>
           <bid><type>int</type><long></long><default></default></bid>
           <descr><type>str</type><long></long><default></default></descr>
+          <bname><type>str</type><long></long><default></default></bname>
         </argument>
       </sql>
       <layout>
@@ -32,6 +39,7 @@
         <element><selector>.//*[@name="bid"]</selector><attribute></attribute><fild>bid</fild></element>
         <element><selector>.//*[@name="bid"]</selector><attribute>data-href</attribute><fild>bid</fild></element>
         <element><selector>.//*[@name="descr"]</selector><attribute>value</attribute><fild>descr</fild></element>
+        <element><selector>.//*[@name="bname"]</selector><attribute></attribute><fild>bname</fild></element>
       </layout>
     </part>
     <part></part>

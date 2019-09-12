@@ -10,7 +10,7 @@
         <readquery></readquery>
         <writequery></writequery>
         <readgenerator>
-          <scriptname>journal</scriptname>
+          <scriptname>journal_examples</scriptname>
           <param>
             <table>examples</table>
             <id_name>exid</id_name>
@@ -22,6 +22,11 @@
           <code><type>int</type><long></long><default></default></code>
           <bid><type>int</type><long></long><default></default></bid>
           <descr><type>str</type><long></long><default></default></descr>
+          <bname><type>str</type><long></long><default></default></bname>
+          <sdate><type>str</type><long></long><default></default></sdate>
+          <author><type>str</type><long></long><default></default></author>
+          <genre><type>str</type><long></long><default></default></genre>
+          <available><type>int</type><long></long><default></default></available>
         </argument>
       </sql>
       <layout>
@@ -29,7 +34,13 @@
           <element><selector>.//*[@name="exid"]</selector><attribute>data-href</attribute><fild>exid</fild></element>
           <element><selector>.//*[@name="code"]</selector><attribute></attribute><fild>code</fild></element>
           <element><selector>.//*[@name="bid"]</selector><attribute></attribute><fild>bid</fild></element>
+          <element><selector>.//*[@name="bid"]</selector><attribute>data-href</attribute><fild>bid</fild></element>
+          <element><selector>.//*[@name="author"]</selector><attribute></attribute><fild>author</fild></element>
+          <element><selector>.//*[@name="bname"]</selector><attribute></attribute><fild>bname</fild></element>
+          <element><selector>.//*[@name="genre"]</selector><attribute></attribute><fild>genre</fild></element>
           <element><selector>.//*[@name="descr"]</selector><attribute></attribute><fild>descr</fild></element>
+          <!-- <element><selector>.//*[@name="available"]</selector><attribute></attribute><fild>available</fild></element> -->
+          <element><selector>.//*[@name="available"]</selector><attribute>data-ex_available</attribute><fild>available</fild></element>
       </layout>
     </part>
     <part></part>
