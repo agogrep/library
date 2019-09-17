@@ -1,190 +1,274 @@
-uid;id;user id
-accept;accept;
-aid;id;account id
-all;all;
-aname;name;
-apbal;balance AP;balance actual point
-apdate;date AP;date actual point
-apid;id;actual point id
-apply;apply;
-brdate;date;
-brid;id;budget rule id
-cancel;cansel;
-change;change;
-curr;currency;
-def;default;
-delete;delete;
-descr;desc.;description
-dest;dest.;destination
-done;done;
-DONE;DONE;
-edate;date;
-eid;id;event id
-email;email;
-enddate;end. Period;end of period
-ERROR;ERROR;
-fullname;fullname;
-gname;name;
-lid;id;label id
-lname;name;
-login;login;
-minus;minus;
-name;name;
-oid;id;order id
-password;password;
-plus;plus;
-priority;priority;
-RECORDLOCK;RECORD LOCK;
-relclass;class;
-relid;relation;
-rparam;parameters;
-rpdate;beg. period;beginning of period
-rpid;id;period id
-rsid;id;report id
-schedule;schedule;
-script;script;
-selected;selected;
-side;side;
-source;source;
-sum;sum;
-sysname;sys name;system name
-tcurr;currency;
-tdate;date;
-tid;id;transaction id
-to;to;
-type;type;
-usebal;use bal.;use balance
-journals;journals;
-accounts;accounts;
-users;users;
-transactions;transactions;
-labels;tags;
-reportperiods;periods;
-budgetrules;rules of the budget;
-instruments;instruments;
-setbudget;budget;
-window_manager;window manager;
-history;history;
-whole_journal;whole journal;
-exit;output;
-settings;settings;
-widget_editor;widget editor;
-admin_panel;admin panel;
-reboot_web_server;reboot web server;
-system_reboot;system reboot;
-user_monitor;user monitor;
-recovery;recovery;
-events;events;
-to_end;to end;
-countrows;number of lines;
-new_element;new element;
-option;options;
-search;search;
-fast_searsh;search fast;
-currency_exchange;currency exchange;
-transfer;transfer;
-amount_debited;amount written off;
-replenishment_amount;refill amount;
-ru;russian;
-en;english;
-es;spanish;
-additionally;additionally;
-more_;more .....;
-basic_fields;the main;
-others;other;
-schedule;schedule;
-not_available;no access;
-report;report;
-report_set;report Setup;
-range;range;
-links;filter;
-route;direction;
-balance;balance;
-income;receipts;
-outgo;consumption;
-message;message;
-send;to send;
-add_rule;add rule;
-add_order;add sorting;
-constructor;constructor;
-scripts;scripts;
-accounts_list;journal of accounts;
-accounts_form;score;
-budgetrules_form;budget rule;
-budgetrules_list;budget rulebook;
-events_list;developments;
-labels_form;label;
-labels_list;list of tags;
-reportperiods_form;period;
-reportperiods_list;period list;
-reportscripts_list;list of reports;
-setbudget;budget;
-transactions_form;transaction;
-transactions_list;transaction log;
-users_form;user;
-users_list;a list of users;
-selectItems;value selection;
-handling;treatment;
-selected_el;selected;
-all_el;everything;
-DESC;descending;
-ASC;ascending;
-from_account;from the account;
-on_account;into the account;
-amount;amount;
-user;user;
-years;years;
-months;months;
-week;a week;
-month;month;
-from;with;
-to;by;
-monday ;monday;
-tuesday ;tuesday;
-wednesday ;wednesday;
-thursday ;thursday;
-friday ;friday;
-saturday;saturday;
-sunday ;sunday;
-basic;single;
-based_on_the_report;based on the report;
-schedule;schedule;
-period;period;
-rules;regulations;
-report;report;
-generate_transactions;generate transactions;
-about_system;about system;
-period_from;period from;
-on_report;on report;
-tables;tables;
-forms;forms;
-reports;reports;
-save;save;
-add_panel;add panel;
-list_days_of_week;Sun, Mon, Tues, Wed, Thu, Fri, Sat;
-list_names_of_months;Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec;
-change_language;change language;
-setting_panel;setting panel;
-coming;coming;
-day_week;d.of week;day of the week
-day_month;d.of month;day of the month
-form_will_be_deleted;After confirmation, the form will be deleted.;
-INNER;interior;
-OUTER;external;
-USE;use;
-NOT;not use;
-new;new;
-preset_read_only;This preset is read only;
-already_exists;already exists;
-delete_current_preset;Delete this preset?;
-custom;special;
-purse;purse;
-salary;salary;
-products;products;
-passage;passage;
-rent;rent;
-foundation_at_sea;foundation at sea;
-consumption;consumption;
-arrival_in_a_month;arrival in a month;
-monthly_consumption;monthly consumption;
-earnings;earnings;
+Назначение;Системное имя;rus;;en;;es;
+;;сокращенное;полное название;сокращенное;полное название;сокращенное;полное название
+sys;uid;id;id пользователя;id;user id;id;ID de usuario
+billing;accept;проведен;;accept;;aceptar;
+billing;aid;id;id счета;id;account id;id;ID de la cuenta
+sys;all;все;;all;;todas;
+billing;aname;название;;name;;nombre;
+billing;apbal;баланс ТА;баланс точки актуализации;balance AP;balance actual point;balance AP;equilibrio punto real
+billing;apdate;дата ТА;дата точки актуализации;date AP;date actual point;fecha AP;fecha punto real
+billing;apid;id;id точки актуализации;id;actual point id;id;ID de punto real
+sys;apply;применить;;apply;;aplicar;
+billing;brdate;дата;;date;;fecha;
+billing;brid;id;id правила бюджета;id;budget rule id;id;ID de regla de presupuesto
+sys;cancel;отмена;;cansel;;lata;
+sys;change;изменить;;change;;cambio;
+billing;curr;валюта;;currency;;moneda;
+sys;def;по умолчанию;;default;;defecto;
+sys;delete;удалить;;delete;;Eliminar;
+billing;descr;описание;;desc.;description;desc.;description
+billing;dest;назначение;;dest.;destination;dest.;destination
+sys;done;выполнено;;done;;hecho;
+sys;DONE;ВЫПОЛНЕНО;;DONE;;HECHO;
+sys;edate;дата;;date;;fecha;
+sys;eid;id;id события;id;event id;id;event id
+billing;email;эл.адрес;;email;;correo electrónico;
+sys;enddate;кон. периода;конец периода;end. Period;end of period;fin. Período;end of period
+sys;ERROR;ОШИБКА;;ERROR;;ERROR;
+billing;fullname;полное имя;;fullname;;nombre completo;
+billing;gname;название;;name;;nombre;
+sys;lid;id;id метки;id;label id;id;label id
+billing;lname;название;;name;;nombre;
+sys;login;пользователь;имя пользователя;login;;iniciar sesión;
+billing;minus;минус;;minus;;menos;
+sys;name;название;;name;;nombre;
+sys;oid;id;id ордера;id;order id;id;order id
+sys;password;пароль;паль пользователя;password;;contraseña;
+billing;plus;плюс;;plus;;más;
+sys;priority;приоритет;;priority;;prioridad;
+sys;RECORDLOCK;ЗАПИСЬ ЗАБЛОКИРОВАНА;;RECORD LOCK;;BLOQUEO DE REGISTRO;
+sys;relclass;класс;;class;;clase;
+sys;relid;связь;;relation;;relación;
+billing;rparam;параметры;;parameters;;parámetros;
+billing;rpdate;нач. периода;начало периода;beg. period;beginning of period;mendigar. período;beginning of period
+billing;rpid;id;id периода;id;period id;id;period id
+billing;rsid;id;id рапорта;id;report id;id;report id
+billing;schedule;расписание;;schedule;;calendario;
+billing;script;скрипт;;script;;guión;
+billing;selected;выбранный;;selected;;seleccionado;
+billing;side;расположение;;side;;lado;
+billing;source;источник;;source;;fuente;
+billing;sum;сумма;;sum;;suma;
+sys;sysname;сист. имя;системное имя;sys name;system name;nombre del sistema;system name
+billing;tcurr;валюта;;currency;;moneda;
+billing;tdate;дата;;date;;fecha;
+billing;tid;id;id транзакции;id;transaction id;id;transaction id
+sys;to;по;;to;;a;
+sys;type;тип;;type;;tipo;
+billing;usebal;исп.баланс;использовать баланс;use bal.;use balance;usa bal.;use balance
+sys;journals;журналы;;journals;;revistas;
+billing;accounts;cчета;;accounts;;cuentas;
+sys;users;пользователи;;users;;los usuarios;
+billing;transactions;транзакции;;transactions;;actas;
+sys;labels;метки;;tags;;etiquetas;
+sys;reportperiods;периоды;;periods;;períodos;
+billing;budgetrules;правила бюждета;;rules of the budget;;reglas del presupuesto;
+sys;instruments;инструменты;;instruments;;instrumentos;
+billing;setbudget;бюджет;;budget;;presupuesto;
+sys;window_manager;менеджер окон;;window manager;;administrador de ventanas;
+sys;history;история;;history;;historia;
+sys;whole_journal;весь журнал;;whole journal;;diario completo;
+sys;exit;выход;;output;;salida;
+sys;settings;настройки;;settings;;ajustes;
+sys;widget_editor;редактор виджетов;;widget editor;;editor de widgets;
+sys;admin_panel;панель администратора;;admin panel;;Panel de administrador;
+sys;reboot_web_server;перезагрузка веб сервера;;reboot web server;;reiniciar el servidor web;
+sys;system_reboot;перезагрузка системы;;system reboot;;reinicio del sistema;
+sys;user_monitor;монитор пользователя;;user monitor;;monitor de usuario;
+sys;recovery;восстановление;;recovery;;recuperación;
+sys;events;события;;events;;eventos;
+sys;to_end;к концу;;to end;;para terminar;
+sys;countrows;количество строк;;number of lines;;número de líneas;
+sys;new_element;новый элемент;;new element;;nuevo elemento;
+sys;option;параметры;;options;;opciones;
+sys;search;поиск;;search;;buscar;
+sys;fast_searsh;искать быстро;использовать быстрый поиск;search fast;;busca rápido;
+billing;currency_exchange;обмен валют;;currency exchange;;cambio de divisas;
+billing;transfer;перевод;;transfer;;transferir;
+billing;amount_debited;сумма списания;;amount written off;;cantidad cancelada;
+billing;replenishment_amount;сумма пополнения;;refill amount;;cantidad de recarga;
+sys;ru;русский;;russian;;ruso;
+sys;en;английский;;english;;Inglés;
+sys;es;испанский;;spanish;;Español;
+sys;additionally;дополнительно;;additionally;;Adicionalmente;
+sys;more_;больше.....;;more .....;;más .....;
+sys;basic_fields;основные;;the main;;el principal;
+sys;others;другие;;other;;otro;
+sys;schedule;расписание;;schedule;;calendario;
+sys;not_available;нет доступа;;no access;;sin acceso;
+sys;report;отчет;;report;;reporte;
+billing;report_set;настройка отчета;;report Setup;;informe de configuración;
+sys;range;диапазон;диапазон дат;range;;distancia;
+sys;links;фильтр;настройка фильтра links;filter;;filtrar;
+sys;route;направление;;direction;;dirección;
+billing;balance;баланс;;balance;;equilibrar;
+billing;income;поступления;;receipts;;ingresos;
+billing;outgo;расход;;consumption;;consumo;
+sys;message;сообщение;;message;;mensaje;
+sys;send;отправить;;to send;;mandar;
+sys;add_rule;добавить правило;;add rule;;agregar regla;
+sys;add_order;добавить сортировку;;add sorting;;agregar clasificación;
+sys;constructor;конструктор;;constructor;;constructor;
+sys;scripts;скрипты;;scripts;;guiones;
+billing;accounts_list;журнал счетов;;journal of accounts;;diario de cuentas;
+billing;accounts_form;счет;;score;;Puntuación;
+billing;budgetrules_form;правило бюджета;;budget rule;;regla de presupuesto;
+billing;budgetrules_list;журнал правил бюджета;;budget rulebook;;libro de reglas de presupuesto;
+billing;events_list;события;;developments;;desarrollos;
+billing;labels_form;метка;;label;;etiqueta;
+billing;labels_list;список меток;;list of tags;;lista de etiquetas;
+billing;reportperiods_form;период;;period;;período;
+billing;reportperiods_list;список периодов;;period list;;lista de períodos;
+billing;reportscripts_list;список рапортов;;list of reports;;lista de informes;
+billing;setbudget;бюджет;;budget;;presupuesto;
+billing;transactions_form;транзакция;;transaction;;transacción;
+billing;transactions_list;журнал транзакций;;transaction log;;registro de transacciones;
+billing;users_form;пользователь;;user;;usuario;
+billing;users_list;список пользователей;;a list of users;;una lista de usuarios;
+sys;selectItems;выбор значения;;value selection;;selección de valor;
+sys;handling;обработка;;treatment;;tratamiento;
+sys;selected_el;выбранные;;selected;;seleccionado;
+sys;all_el;все;;everything;;todo;
+sys;DESC;по убыванию;;descending;;descendiendo;
+sys;ASC;по возрастанию;;ascending;;ascendente;
+billing;from_account;cо счета;;from the account;;de la cuenta;
+billing;on_account;на счет;;into the account;;en la cuenta;
+;amount;сумма;;amount;;cantidad;
+billing;user;пользователь;;user;;usuario;
+sys;years;годы;;years;;años;
+sys;months;месяцы;;months;;meses;
+sys;week;неделя;;a week;;una semana;
+sys;month;месяц;;month;;mes;
+sys;from;с;;with;;de;
+sys;to;по;;by;;a;
+sys;monday ;понедельник;;monday;;lunes;
+sys;tuesday ;вторник;;tuesday;;martes;
+sys;wednesday ;среда;;wednesday;;miércoles;
+sys;thursday ;четверг;;thursday;;jueves;
+sys;friday ;пятница;;friday;;viernes;
+sys;saturday;суббота;;saturday;;sábado;
+sys;sunday ;воскресенье;;sunday;;domingo;
+sys;basic;основные;;single;;lo esencial;
+sys;based_on_the_report;на основании отчета;;based on the report;;basado en el informe;
+sys;schedule;расписание;;schedule;;calendario;
+sys;period;период;;period;;período;
+sys;rules;правила;;regulations;;regulaciones;
+sys;report;отчет;;report;;reporte;
+sys;generate_transactions;генерировать транзакции;;generate transactions;;generar transacciones;
+sys;about_system;о системе;;about system;;sobre el sistema;
+sys;period_from;период с:;;period from;;periodo desde;
+sys;on_report;по отчету;;on report;;en el informe;
+sys;tables;таблицы;;tables;;mesas;
+sys;forms;формы;;forms;;formas;
+sys;reports;отчеты;;reports;;informes;
+sys;save;сохранить;;save;;salvar;
+sys;add_panel;добавить панель;;add panel;;agregar panel;
+sys;list_days_of_week;Вс,Пн,Вт,Ср,Чт,Пт,Сб;;Sun, Mon, Tues, Wed, Thu, Fri, Sat;;Do,Lu,Ma,Mi,Ju,Vi,Sá;
+sys;list_names_of_months;Янв,Фев,Мар,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек;;Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec;;enero,feb,marzo,abr,mayo,jun,jul,agosto,sept,oct,nov,dic;
+sys;change_language;изменить язык;;change language;;cambiar idioma;
+sys;setting_panel;панель настроек;;setting panel;;panel de ajuste;
+billing;coming;приход;;coming;;viniendo;
+sys;day_week;д. недели;день недели;d.of week;day of the week;d. semana;dia de la semana
+sys;day_month;д. месяца;день месяца;d.of month;day of the month;d. mes;dia del mes
+sys;form_will_be_deleted;После подтверждения форма будет удалена;;After confirmation, the form will be deleted.;;Después de la confirmación, el formulario será eliminado.;
+billing;INNER;внутренний;;interior;;interno;
+billing;OUTER;внешний;;external;;externo;
+billing;USE;использовать;;use;;usar;
+billing;NOT;не использовать;;not use;;no usar;
+sys;new;новый;;new;;nuevo;
+sys;preset_read_only;Этот пресет доступен только для чтения;;This preset is read only;;Este preset es de solo lectura.;
+sys;already_exists;уже есть;;already exists;;ya tengo;
+sys;delete_current_preset;Удалить этот пресет?;;Delete this preset?;;¿Borrar este preset?;
+sys;custom;специальный;;special;;especial;
+demo;purse;кошелек;;purse;;billetera;
+demo;salary;зарплата;;salary;;sueldo;
+demo;products;продукты;;products;;productos;
+demo;passage;проезд;;passage;;pasaje;
+demo;rent;квартплата;;rent;;alquilar;
+demo;foundation_at_sea;фонд на море;;foundation at sea;;fundación en el mar;
+demo;consumption;расход;;consumption;;gasto;
+demo;arrival_in_a_month;приход за месяц;;arrival in a month;;llegada en un mes;
+demo;monthly_consumption;расход за месяц;;monthly consumption;;consumo mensual;
+billing;earnings;доход;;earnings;;ganancias;
+billing;track;следить;;;;;
+billing;sfullname;п.название;полное название;;;;
+billing;inn;INN;идентификационный код;;;;
+billing;stype;тип;тип субъекта;;;;
+billing;regnum;рег.номер;регистрационный номер;;;;
+billing;regdate;дата рег.;дата регистрации;;;;
+billing;taxation;тип.нал.;тип налогооблажения;;;;
+billing;admin;имя админ.;имя администратора;;;;
+billing;sgid;id;id группы;;;;
+billing;contacts;контакты;;;;;
+billing;currcid;контракт;;;;;
+billing;subjects;субъекты;;;;;
+billing;sublabels;метки;;;;;
+billing;slid;id;id метки;;;;
+billing;slname;название;;;;;
+billing;subgroups;группы;;;;;
+billing;sgid;id;id группы;;;;
+billing;sgname;название;;;;;
+billing;contracts;контракты;;;;;
+billing;cid;id;id контракта;;;;
+billing;cdate;дата;;;;;
+billing;contractor;исполнитель;;;;;
+billing;customer;клиент;;;;;
+billing;budget;бюджет;;;;;
+billing;iban;IBAN;;;;;
+billing;ENTITY;юр.лицо;;;;;
+billing;IE;физ.лицо;;;;;
+billing;common;общий;;;;;
+billing;simpl;упрощенный;;;;;
+billing;sname;название;;;;;
+billing;sid;id;id субъекта;;;;
+billing;template;шаблон;;;;;
+billing;subject;субъект;;;;;
+billing;help;помощник;;;;;
+billing;fill_template;заполнить шаблон;;;;;
+billing;tasks;задачи;;;;;
+billing;sourcename;название;название источника;;;;
+billing;destname;название;название назначения;;;;
+billing;cal_amount;пере.сумма;пересчитанная сумма;;;;
+billing;fixed_amount;фикс.сумма;фиксированная сумма;;;;
+billing;performance;выполнение;;;;;
+library;acts;акты;;acts;;actos;
+library;act;акт;;act;;actuar;
+library;acid;id;id акта;id;id of act;id;identificación del acto
+library;state;состаяние;состаяние книги;status;book status;estado;estado del libro
+library;startdate;дата выд.;дата выдачи;date of extra.;date of extradition;fecha de extra.;fecha de extradición
+library;enddate;дата возв.;дата возврата;return date;;fecha de regreso;
+library;authors;авторы;;authors;;autores;
+library;author;автор;;author;;autor;
+library;aid;id;id автора;id;id of author;id;identificación del autor
+library;aname;имя;;name;;nombre;
+library;fullname;полное имя;;full name;;nombre completo;
+library;about;об авторе;;about;;acerca de;
+library;books;книги;;books;;libros;
+library;book;книга;;book;;libro;
+library;bid;id;id книги;id;id of book;id;identificación del libro
+library;bname;название;;name;;nombre;
+library;edition;издание;;edition;;edición;
+library;sdate;дата;дата издания;date;publication date;fecha;fecha de publicación
+library;summary;резюме;;summary;;resumen;
+library;examples;экземпляры;;examples;;ejemplos;
+library;example;экземпляр;;example;;ejemplo;
+library;exid;id;id экземпляра;id;id of examples;id;identificación de ejemplos
+library;code;код;;code;;código;
+library;genres;жанры;;genres;;géneros;
+library;genre;жанр;;genre;;género;
+library;gnid;id;id жанра;id;id of genre;id;identificación del género
+library;gname;название;;name;;nombre;
+library;places;места;;places;;lugares;
+library;place;место;место хранения;place;;lugar;lugar de almacenamiento
+library;pid;id;id места хранения;id;id of place;id;identificación del lugar
+library;pname;название;;name;;nombre;
+library;readers;читатели;;readers;;lectores;
+library;reader;читатель;;reader;;lector;
+library;rid;id;id читателя;id;Id of reader;id;Identificación del lector
+library;rname;имя;;name;;nombre;
+library;contacts;контакты;;contacts;;contactos;
+library;available;доступно;;available;;disponible;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;; ;;;;

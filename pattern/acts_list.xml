@@ -26,7 +26,7 @@
           <rname><type>str</type><long></long><default></default></rname>
           <code><type>int</type><long></long><default></default></code>
           <bname><type>str</type><long></long><default></default></bname>
-
+          <author><type>str</type><long></long><default></default></author>
         </argument>
       </sql>
       <layout>
@@ -34,6 +34,7 @@
           <element><selector>.//*[@name="acid"]</selector><attribute>data-href</attribute><fild>acid</fild></element>
           <element><selector>.//*[@name="exid"]</selector><attribute></attribute><fild>exid</fild></element>
           <element><selector>.//*[@name="code"]</selector><attribute></attribute><fild>code</fild></element>
+          <element><selector>.//*[@name="author"]</selector><attribute></attribute><fild>author</fild></element>
           <element><selector>.//*[@name="bname"]</selector><attribute></attribute><fild>bname</fild></element>
           <element><selector>.//*[@name="rid"]</selector><attribute></attribute><fild>rid</fild></element>
           <element><selector>.//*[@name="rname"]</selector><attribute></attribute><fild>rname</fild></element>

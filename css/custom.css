@@ -8,13 +8,37 @@
   color: var(--e1_col);
 }
 
-
-
-
 .row div[data-ex_available="1"]::before{
     content: "\e903";
 }
 
 .row div[data-ex_available="0"]::before{
     content: "\e901";
+}
+
+
+#form .form-authors div[name="author"],
+#form .form-authors div[name="author"] + .border,
+#form .form-authors div[name="sdate"],
+#form .form-authors div[name="sdate"] + .border,
+#form .form-authors div[name="descr"],
+#form .form-authors div[name="descr"] + .border,
+#form .form-books div[name="bname"],
+#form .form-books div[name="bname"] + .border,
+#form .form-books div[name="author"],
+#form .form-books div[name="author"] + .border,
+#form .form-books div[name="bid"],
+#form .form-books div[name="bid"] + .border,
+#form .form-books div[name="genre"],
+#form .form-books div[name="genre"] + .border,
+#form .form-examples div[name="bname"],
+#form .form-examples div[name="bname"] + .border,
+#form .form-examples div[name="code"],
+#form .form-examples div[name="code"] + .border,
+#form .form-readers div[name="rname"],
+#form .form-readers div[name="rname"] + .border,
+#form .form-readers div[name="startdate"],
+#form .form-readers div[name="startdate"] + .border
+{
+  display: none;
 }

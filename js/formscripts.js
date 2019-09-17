@@ -57,6 +57,9 @@ var acts_form = {
       if ('importData' in data) {
         data.importData(this.element);
       }
+
+      var date = new Date();
+      this.element.find('[name=startdate]').val( date.toISOString().substr(0, 10) );
     }
   }
 }
@@ -175,6 +178,24 @@ var authors_form = {
       }
     }
     thisEl.find('.formtabs').wintabs( "option","activate", showTab);
+
+    thisEl.find('[name="fullname"]').change(()=>{
+      var anameEl = thisEl.find('[name="aname"]');
+      if (!anameEl.val()) {
+        var val = thisEl.find('[name="fullname"]').val();
+        valList = val.split(/\s+/g);
+        var newVal = '';
+        valList.forEach((el,i)=>{
+          if (i==0) {
+            newVal = el;
+          }else{
+            newVal = newVal + ' ' + el.slice(0,1) + '.';
+          }
+        });
+        anameEl.val(newVal);
+      }
+
+    });
 
   }
 
