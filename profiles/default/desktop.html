@@ -1,14 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html>
 <head>
 <meta charset="utf-8">
 </head>
 <body>
-  <div id  = 'desktop'>
-    <div id = "dt-recycler" class = "dt-hidden">
-      <ul class = 'dt-recycler dt-sortable'></ul>
-      <svg><use xlink:href="/file/ico/sprite.svg#recycler"></use></svg>
+  <div id="desktop">
+    <div id="dt-recycler" class="dt-hidden">
+      <ul class="dt-recycler dt-sortable ui-sortable">
+      </ul>
+      <svg>
+        <use xlink:href="/file/ico/sprite.svg#recycler"></use>
+      </svg>
     </div>
-    <ul id = "dt-root" ></ul>
+    <ul id="dt-root" class="ui-sortable">
+      <li class="dt-panel ui-sortable-handle">
+        <div class="dt-name-panel dt-row-resize" title="panel"></div>
+        <div class="delimiter">
+        </div>
+        <ul class="dt-sortable ui-sortable">
+          <li class="dt-button">
+            <button class="link dialog lang" data-typedialog="formJournal" data-href="/acts_list/?id=0" data-preset="5" data-masterfield="acid" data-path="/acts_list/" >acts</button>
+          </li>
+          <li class="dt-button ui-sortable-handle">
+            <button class="link dialog lang" data-typedialog="formJournal" data-href="/readers_list/?id=0" data-preset="6" data-masterfield="rid" data-path="/readers_list/" >readers</button>
+          </li>
+          <li class="dt-button">
+            <button class="link dialog lang" data-typedialog="formJournal" data-href="/genres_list/?id=0" data-preset="4" data-masterfield="gnid" data-path="/genres_list/" >genres</button>
+          </li>
+          <li class="dt-button">
+            <button class="link dialog lang" data-typedialog="formJournal" data-href="/places_list/?id=0" data-preset="7" data-masterfield="pid" data-path="/places_list/" >places</button>
+          </li>
+          <li class="dt-button">
+            <button class="link dialog lang" data-typedialog="formJournal" data-href="/authors_list/?id=0" data-preset="3" data-masterfield="aid" data-path="/authors_list/" >authors</button>
+          </li>
+          <li class="dt-button ui-sortable-handle">
+            <button class="link dialog lang" data-typedialog="formJournal" data-href="/books_list/?id=0" data-preset="1" data-masterfield="bid" data-path="/books_list/" >books</button>
+          </li>
+          <li class="dt-button ui-sortable-handle">
+            <button class="link dialog lang" data-typedialog="formJournal" data-href="/examples_list/?id=0" data-preset="2" data-masterfield="exid" data-path="/examples_list/" >examples</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </body>
 </html>
