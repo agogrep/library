@@ -21,7 +21,7 @@
 
 LOCK TABLES `agog` WRITE;
 /*!40000 ALTER TABLE `agog` DISABLE KEYS */;
-INSERT INTO `agog` VALUES (1,'aid_bid','aid','authors','link','',0,0),(2,'aid_bid','bid','books','link','',0,0),(3,'gnid_bid','gnid','genres','link','',0,0),(4,'gnid_bid','bid','books','link','',0,0);
+INSERT INTO `agog` VALUES (1,'aid_bid','aid','authors','link','',0,0),(2,'aid_bid','bid','books','link','',0,0),(3,'gnid_bid','gnid','genres','link','',0,0),(4,'gnid_bid','bid','books','link','',0,0),(5,'acts','exid','examples','','',0,0),(6,'acts','rid','readers','','',0,0),(7,'books','pid','places','','',0,0),(8,'examples','bid','books','','',0,0),(9,'books','bname','','','',1,0),(10,'genres','gname','','','',1,0),(11,'places','pname','','','',1,0),(12,'examples','code','','','',1,0),(13,'readers','rname','','','',1,0),(14,'authors','aname','','','',1,0);
 /*!40000 ALTER TABLE `agog` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-09-13  0:00:02
+-- Dump completed on 2019-10-03  0:00:04
